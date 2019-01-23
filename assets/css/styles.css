@@ -1,0 +1,420 @@
+* { 
+	box-sizing: border-box
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	background: #EEE;
+}
+
+header { 
+	display: inline-block;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0px;
+	padding: 0;
+	z-index: 2;
+}
+
+header .headerWrapper { 
+	max-width: 960px; 
+	width: 100%;
+	margin: 0 auto;
+}
+
+header .headerName { 
+	float: left;
+	padding: 25px 20px;
+	color: white;
+	font-size: 40px;
+	text-decoration: none;
+	background: rgba(255,255,255,0.1);
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header .headerName.secondary { 
+	background: rgba(255,255,255,0.1)
+ url("../../assets/images/michael-rosario.jpeg") top left no-repeat;
+	background-size: contain;
+	padding: 25px 20px 25px 120px;
+	margin-left: -97px;
+}
+
+header nav {
+	float: right;
+}
+
+nav ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+	float: left;
+	font-size: 20px;
+}
+
+nav li a {
+	color: #FFF;
+	text-decoration: none;
+	padding: 37px;
+	float: left;
+}
+nav li a.current,
+nav li a:hover { background: rgba(255,255,255,0.1); }
+
+
+#bodyWrapper { 
+	width: 100%; 
+	max-width: 960px;
+	background: #FFF;
+	position: relative;
+	padding: 10px 30px 20px;
+	margin: 130px auto 100px auto;
+}
+
+#bodyWrapper p { 
+	font-size: 16px;
+	line-height: 1.25em;
+}
+
+#bodyWrapper .textLarge {
+	font-size: 18px;
+	line-height: 1.35em;
+}
+
+#bodyWrapper .textBold {
+	font-weight: bold;
+}
+
+
+#bodyWrapper a { 
+	color: #666;
+	cursor: pointer;
+}
+
+#bodyWrapper a:hover { 
+	color: #333;
+}
+
+#bodyWrapper h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	padding: 0px 0 0px;
+	margin: 20px 0 10px 0;
+}
+
+#bodyWrapper HR { margin: 20px 0; }
+
+#bodyWrapper img { 
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 100%;
+}
+
+#bodyWrapper .aboutPhoto {
+	max-width: 300px;
+}
+
+.clearfix {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.socialMedia {
+	float: left;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	list-style: none;
+}
+
+.socialMedia li {
+	list-style: none;
+	display: inline;
+}
+
+.socialMedia li ins { 
+	border: none;
+	text-decoration: none;
+}
+
+.socialMedia li a { 
+	display: inline-block;
+	padding: 11px 0px 9px;
+	border: 1px solid #666;
+	color: #666;
+	border-radius: 300px;
+	width: 40px;
+	text-align: center;
+}
+.socialMedia li a:hover { 
+	border: 1px solid #000;
+	color: #000;
+}
+
+.socialMedia .socialMediaLabel {
+	font-family: Helvetica, sans-serif;
+	padding-right: 10px;
+	color: #999;
+}
+
+
+/* PORFOLIO SPECIFIC */
+.portFolioItems { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.portFolioItems li {
+	display: inline;
+	float: left;
+	float: left;
+	width: 25%;
+	min-height: 180px;
+	padding: 0 20px 10px 0;
+	margin: 0 0px 30px 0;
+	font-weight: bold;
+
+
+}
+
+.portFolioItems li a {
+	text-decoration: none;
+	color: #444;
+}
+
+.portFolioItems li a:hover {
+	color: #000;
+}
+
+
+.portFolioItems .cover {
+	width: 100%;
+	float: left;
+	height: 150px;
+	overflow: hidden;
+	border: 1px solid #111;
+	background: #000;
+	border-radius: 4px;
+	margin: 0 20px 10px 0;
+}
+
+.portFolioItems .cover img {
+	width: 100%;
+	height: auto !important;
+}
+
+.portFolioItems li a:hover .cover {
+	border: 2px solid #000;
+}
+
+/* CONTACT SPECIFIC */
+
+.contactForm label { 
+	display: block; 
+	clear: both; 
+	width: 100%; 
+	font-weight: 600;
+	margin: 0 0 10px 0;
+}
+
+.contactForm textarea,
+.contactForm input { 
+	display: block; 
+	clear: both; 
+	width: 100%; 
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	margin: 0 0 20px 0;
+}
+
+.contactForm textarea {
+	height: 300px;
+}
+
+.contactForm input[type=submit] {
+	display: inline-block;
+	width: auto;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px 30px;
+
+}
+
+
+footer { 
+	padding: 10px 0 10px 0;
+	background: rgba(0,0,0,0.8);
+	display: block;
+	width: 100%;
+	float: left;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	color: #FFF;
+}
+
+.hamburger-menu { display: none; }
+
+@media only screen and (max-width: 804px) {
+
+	.portFolioItems li {
+		width: 33.33%;
+	}
+	.portFolioItems .cover {
+		height: 140px;
+	}
+
+	nav li a {
+		
+		padding: 37px 18px;
+		
+	}
+
+} 
+
+@media only screen and (max-width: 767px) {
+
+	.portFolioItems li {
+		width: 50%;
+	}
+	.portFolioItems .cover {
+		height: 190px;
+	}
+	nav li a {
+		padding: 37px 14px;
+	}
+
+} 
+
+@media only screen and (max-width: 700px) {
+
+	#bodyWrapper { margin-top: 100px; }
+
+	#bodyWrapper h1 { 
+		display: block; 
+		width: 100%;
+		text-align: center;
+	}
+
+	.socialMedia { 
+		margin: 0 0 20px 0;
+		position: relative; 
+		top: 0; 
+		width: 100%; 
+		text-align: center; 
+	}
+	.socialMedia .socialMediaLabel { display: none; }
+
+	.hamburger-menu { 
+		z-index: 100;
+		position: absolute;
+		top: 18px;
+		right: 20px;
+		display: block;
+		float: left;
+		display: inline-block;
+		width: 30px;
+		height: 40px;
+	}
+
+	.hamburger-menu .line-one,
+	.hamburger-menu .line-two,
+	.hamburger-menu .line-three {
+		position: absolute;
+		right: 0px;
+		display: inline-block;
+		height: 1px;
+		width: 30px;
+		background-color: #FFF;
+		-webkit-transition: all .3s; /* Safari */
+ 		 transition: all .3s;
+	}
+
+	.hamburger-menu .line-one { top: 12px; }
+	.hamburger-menu .line-two { top: 20px; }
+	.hamburger-menu .line-three { top: 28px; }
+
+	.hamburger-menu.open .line-one { top: 20px; transform: rotate(-45deg); }
+	.hamburger-menu.open .line-two { transform: rotate(45deg); }
+	.hamburger-menu.open .line-three { top: 20px; display: none; }
+	
+	.hamburger-menu:hover .line-one { top: 10px; }
+	.hamburger-menu:hover .line-two { top: 20px; }
+	.hamburger-menu:hover .line-three { top: 30px; }
+
+	.hamburger-menu.open:hover .line-one { top: 20px; }
+	.hamburger-menu.open:hover .line-two { top: 20px; }
+	.hamburger-menu.open:hover .line-three {  }
+
+	header nav {
+		width: 100%;
+		padding: 15px 0;
+		text-align: center;
+		display: none;
+	}
+
+	header nav.open {
+		display: block;
+	}
+
+	header .headerName { 
+		float: left;
+		width: 100%;
+		padding: 20px 0px;
+		text-align: center;
+		font-size: 29px;
+	}
+
+	header .headerName.secondary { 
+		padding: 20px 0;
+		margin-left: 0px;
+	}
+
+	nav li {
+		list-style: none;
+		display: inline-block;
+		float: none;
+		font-size: 20px;
+	}
+
+	nav li a {
+		color: #FFF;
+		text-decoration: none;
+		padding: 7px;
+		float: left;
+		background: none;
+		padding-bottom: 9px;
+	}
+	nav li a.current,
+	nav li a:hover {
+		border-bottom: 2px solid #999;
+		background: none;
+		padding-bottom: 7px;
+	}
+
+	.portFolioItems li {
+		width: 100%;
+		margin-right: 0;
+		padding: 0;
+	}
+	.portFolioItems .cover {
+		height: 260px;
+	}
+
+} 
+
+
+
+

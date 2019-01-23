@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Michael Rosario</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            <link rel="stylesheet" media="all" href="./assets/css/styles.css" />
+        </head>
+        <body>
+            <header>
+                <div class="headerWrapper">
+                    <a class="headerName" href="./index.html" title="About Michael Rosario">Michael Rosario</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="current" href="./index.html">About</a>
+                            </li>
+                            <li>
+                                <a href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-menu">
+                        <span class="line-one"></span>
+                        <span class="line-two"></span>
+                        <span class="line-three"></span>
+                    </div>
+            </header>
+            
+            <section id="bodyWrapper">
+                <h1>About Me</h1>
+
+                <ul class="socialMedia">
+                    <li class="socialMediaLabel">Connect:</li>
+                    <li>
+                        <a href="https://www.twitter.com/michael_rosario" target="_blank">
+                            <ins class="fab fa-twitter"></ins>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/michaelrosario" target="_blank">
+                            <ins class="fab fa-linkedin-in"></ins>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/michaelrosario" target="_blank">
+                            <ins class="fab fa-github"></ins>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@michaelrosario.com" target="_blank">
+                            <ins class="far fa-envelope"></ins>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.michaelrosario.com"
+                        target="_blank">
+                            <ins class="fa fa-link"></ins>
+                        </a>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <img class="aboutPhoto" 
+                    src="./assets/images/michael-rosario.jpeg" 
+                    alt="Michael Rosario" />
+
+                <p class="textLarge textBold">Michael Rosario is a web developer, designer, project manager and the owner of <a href="https://www.elementoinc.com" target="_blank">Elemento, Inc</a>. He provides online solutions to small to large businesses - creating websites, banner ads, html emails and anything and everything from the web!</p>
+                
+                <p>He has an art background from <a href="https://www.laguardiahs.org/" target="_blank">Fiorello H. Laguardia High School of Music and Art & Performing Arts</a> and a Computer Engineering degree from <a href="https://www.cuny.edu/" target="_blank">the City College of New York</a>.</p>
+
+                <p>Worked in IT for 6 years and another 6 years working at a Award-winning Web development agency.</p>
+
+                <p>He then started Elemento, Inc. in 2014, working and looking for cool projects to work on and make online work for businesses and others alike.</p>
+        
+
+                <div class="clearfix"></div>
+                
+            </section>
+          
+            <footer>
+                <p>Copyright &copy; 2019
+            </footer>  
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+            <script type="text/javascript">
+                
+                $(document).ready(function(){
+
+                    $(".hamburger-menu").on("click",function(){
+
+                        if($(this).hasClass("open")){
+
+                            $(this).removeClass("open");
+                            $("nav").removeClass("open");
+
+                        } else {
+
+                            $(this).addClass("open");
+                            $("nav").addClass("open");
+
+                        }
+
+                    })
+
+                });
+
+            </script>
+
+        </body>
+    </html>

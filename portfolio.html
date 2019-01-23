@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Portfolio : Michael Rosario</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link rel="stylesheet" media="all" href="./assets/css/styles.css" />
+        </head>
+        <body>
+            <header>
+                <div class="headerWrapper">
+                     <a class="headerName secondary" href="./index.html" title="About Michael Rosario">Michael Rosario</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="./index.html">About</a>
+                            </li>
+                            <li>
+                                <a class="current" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-menu">
+                        <span class="line-one"></span>
+                        <span class="line-two"></span>
+                        <span class="line-three"></span>
+                    </div>
+                </div>
+            </header>
+            
+             <section id="bodyWrapper">
+                
+                <h1>Portfolio</h1>
+
+                <hr />
+
+                <ul class="portFolioItems">
+                    <li>
+                        <a href="https://www.elementoinc.com" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-elemento.png" alt="Elemento, Inc.">
+                            </span>
+                            Elemento, Inc.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.armoryonpark.org" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-armoryonpark.png" alt="Armory on Park">
+                            </span>
+                            Park Avenue Armory
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.centralsynagogue.org" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-central_synagogue.png" alt="Central Synagogue">
+                            </span>
+                            Central Synagogue
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.jessicaseinfeld.com" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-jessicaseinfeld.png" alt="Jessica Seinfeld">
+                            </span>
+                            Jessica Seinfeld
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.raritan.com" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-raritan.png" alt="Elemento, Inc.">
+                            </span>
+                            Raritan, Inc.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.saintdavids.org" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-sds.png" alt="Saint David's School">
+                            </span>
+                            Saint David's School
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.thrasys.org" target="_blank">
+                            <span class="cover">
+                                <img src="./assets/images/portfolio-thrasys.png" alt="Thrasys">
+                            </span>
+                            Thrasys Inc.
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="clearfix"></div>
+                
+            </section>
+          
+            <footer>
+                <p>Copyright &copy; 2019
+            </footer>  
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+            <script type="text/javascript">
+                
+                $(document).ready(function(){
+
+                    $(".hamburger-menu").on("click",function(){
+
+                        if($(this).hasClass("open")){
+
+                            $(this).removeClass("open");
+                            $("nav").removeClass("open");
+
+                        } else {
+
+                            $(this).addClass("open");
+                            $("nav").addClass("open");
+
+                        }
+
+                    })
+
+                });
+
+            </script>
+
+        </body>
+    </html>

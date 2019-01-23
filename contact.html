@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Contact : Michael Rosario</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link rel="stylesheet" media="all" href="./assets/css/styles.css" />
+
+        </head>
+        <body>
+            <header>
+                <div class="headerWrapper">
+                    <a class="headerName secondary" href="./index.html" title="About Michael Rosario">Michael Rosario</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="./index.html">About</a>
+                            </li>
+                            <li>
+                                <a href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="current" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-menu">
+                        <span class="line-one"></span>
+                        <span class="line-two"></span>
+                        <span class="line-three"></span>
+                    </div>
+                </div>
+            </header>
+            
+            <section id="bodyWrapper" class="contactForm">
+                
+                <h1>Contact</h1>
+
+                <hr />
+
+                <label>Full Name</label>
+                <input 
+                    name="fullName" type="text" 
+                    placeholder="What's your name?" />
+
+                <label>Subject</label>
+                <input 
+                    name="subject" 
+                    type="text" 
+                    placeholder="What do you want to talk about?" />
+
+                <label>Message</label>
+                <textarea name="subject" placeholder="Write me a quick message."></textarea>
+
+                <input type="submit" value="Send" />
+
+                <div class="clearfix"></div>
+                
+            </section>
+          
+            <footer>
+                <p>Copyright &copy; 2019
+            </footer>  
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+            <script type="text/javascript">
+                
+                $(document).ready(function(){
+
+                    $(".hamburger-menu").on("click",function(){
+
+                        if($(this).hasClass("open")){
+
+                            $(this).removeClass("open");
+                            $("nav").removeClass("open");
+
+                        } else {
+
+                            $(this).addClass("open");
+                            $("nav").addClass("open");
+
+                        }
+
+                    })
+
+                });
+
+            </script>
+
+        </body>
+    </html>
